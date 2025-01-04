@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eaeaea;
+}
+
+.container {
+    position: relative;
+}
+
+.container .lock,
+.container .eye {
+    position: absolute;
+    color: #002871;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.container .lock {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    border-right: 2px solid #fff;
+    padding-right: 5px;
+}
+
+.container .eye {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container .lock svg,
+.container .eye svg {
+    height: 40px;
+    width: 40px;
+}
+
+.container .eye .closed-eye {
+    display: none;
+}
+
+.container .eye.active .opened-eye {
+    display: none;
+}
+
+.container .eye.active .closed-eye {
+    display: block;
+}
+
+#password {
+    position: relative;
+    width: 400px;
+    background: #26C9C3;
+    padding: 25px 75px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    transition: 0.2s all ease-in-out;
+}
+
+#password.active {
+    background: #002871;
+}
+
+#password.active ~ .lock,
+#password.active ~ .eye {
+    color: #26C9C3;
+}
+
+#password:focus {
+    outline: none;
+    border: none;
+}
