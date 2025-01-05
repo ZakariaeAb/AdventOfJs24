@@ -1,7 +1,7 @@
 const eyePath = document.querySelector(".eye");
 const passwordInput = document.getElementById("password");
 
-const togglePasword = () => {
+const togglePassword = () => {
     if (passwordInput.type === "password") {
         passwordInput.type = "text";
         passwordInput.classList.toggle('active');
@@ -13,4 +13,4 @@ const togglePasword = () => {
     }
 }
 
-eyePath.addEventListener("click", togglePasword);
+eyePath.addEventListener("click", togglePassword);

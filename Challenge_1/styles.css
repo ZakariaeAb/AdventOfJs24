@@ -19,7 +19,6 @@ body {
 .container .lock,
 .container .eye {
     position: absolute;
-    color: #002871;
     cursor: pointer;
     z-index: 10;
 }
@@ -28,14 +27,19 @@ body {
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
-    border-right: 2px solid #fff;
+    border-right: 1.5px solid #fff;
     padding-right: 5px;
+    color: #002871;
 }
 
 .container .eye {
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
+    background: #002871;
+    color: #26C9C3;
+    border-radius: 50%;
+    padding: 8px;
 }
 
 .container .lock svg,
@@ -63,7 +67,7 @@ body {
     padding: 25px 75px;
     border-radius: 10px;
     font-size: 18px;
-    color: #ffffff;
+    color: #000;
     border: none;
     outline: none;
     transition: 0.2s all ease-in-out;
@@ -71,6 +75,7 @@ body {
 
 #password.active {
     background: #002871;
+    color: #fff;
 }
 
 #password.active ~ .lock,
