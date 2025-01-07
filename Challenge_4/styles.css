@@ -1,0 +1,50 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 800px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.panel-top {
+    background: #CAE3DB;
+    height: 50%;
+    overflow: auto;
+}
+
+.divider {
+    height: 8px;
+    background: #000;
+    cursor: row-resize;
+    transition: background 0.2s;
+}
+
+.panel-bottom {
+    flex-grow: 1;
+    overflow: auto;
+    display: flex;
+}
+
+.panel-bottom-left {
+    background: #698662;
+    width: 50%;
+}
+
+.panel-bottom-right {
+    background: #536A4E;
+    flex-grow: 1;
+}
+
+.bottom-divider {
+    background: #000000;
+    width: 8px;
+    cursor: col-resize;
+    transition: background 0.2s;
+}
