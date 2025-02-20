@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Persistent Form Data</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form-container">
+            <div class="name-field">
+                <label for="full-name">Full Name*</label>
+                <input type="text" id="full-name" class="full-name" name="name" required/>
+            </div>
+            <div class="email-field">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" class="email" name="email" required />
+            </div>
+            <div class="radio-group" role="radiogroup">
+                <label>Favorite Reindeer*</label>
+                <div class="radio">
+                    <div class="radio-item">
+                        <input type="radio" id="dasher" value="dasher" name="reindeer" required/>
+                        <label for="dasher">Dasher</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="dancer" value="dancer" name="reindeer" required/>
+                        <label for="dancer">Dancer</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="prancer" value="prancer" name="reindeer" required/>
+                        <label for="prancer">Prancer</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="vixen" value="vixen" name="reindeer" required/>
+                        <label for="vixen">Vixen</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="comet" value="comet" name="reindeer" required/>
+                        <label for="comet">Comet</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="cupid" value="cupid" name="reindeer" required/>
+                        <label for="cupid">Cupid</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="donner" value="donner" name="reindeer" required/>
+                        <label for="donner">Donner</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="blitzen" value="blitzen" name="reindeer" required/>
+                        <label for="blitzen">Blitzen</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="rudolph" value="rudolph" name="reindeer" required/>
+                        <label for="rudolph">Rudolph</label>
+                    </div>
+                </div>
+            </div>
+            <div class="checkbox-group">
+                <label>What holiday movies have you watched this year?</label>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="elf" name="movie" value="elf" />
+                    <label for="elf">Elf (2003)</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="home-alone" name="movie" value="home-alone" />
+                    <label for="home-alone">Home Alone (1990)</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="the-grinch" name="movie" value="the-grinch" />
+                    <label for="the-grinch">The Grinch (1966)</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="wonderful-life" name="movie" value="wonderful-life" />
+                    <label for="wonderful-life">It's a wonderful Life (1946)</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="die-hard" name="movie" value="die-hard" />
+                    <label for="die-hard">Die Hard (1988)</label>
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

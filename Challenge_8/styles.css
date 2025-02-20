@@ -48,6 +48,7 @@ body {
 .tag span {
     margin-right: 10px;
     font-size: 14px;
+    word-break: break-word;
 }
 
 .tag svg {
@@ -61,7 +62,7 @@ body {
     color: #ff0000;
 }
 
-.tags {
+.tags-input {
     min-width: 100px;
     flex: 1;
     background: #1E1E1E;
@@ -72,6 +73,6 @@ body {
     padding: 10px;
 }
 
-.tags:focus {
+.tags-input:focus {
     outline: none;
 }

@@ -1,4 +1,4 @@
-const tagInput = document.getElementById('tags');
+const tagInput = document.getElementById('tags-input');
 const tagsContainer = document.querySelector('.tags-ctn');
 
 const createTag = (text) => {
