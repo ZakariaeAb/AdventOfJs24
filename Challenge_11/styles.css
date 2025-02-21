@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #158181;
+    font-family: 'Krona One', sans-serif;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background: #CCCCCC;
+    border-bottom: 5px solid #666666;
+    border-left: 5px solid #F2F2F2;
+    border-top: 5px solid #E6E6E6;
+    border-right: 5px solid #4D4D4D;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.separator {
+    height: 48px;
+    border-right: 5px solid #F2F2F2;
+    border-left: 5px solid #999999;
+    border-top: 5px solid #ABABAB;
+    border-bottom: 5px solid #E6E6E6;
+}
+
+.clock-ctn {
+    padding:  10px 20px;
+    margin: 5px;
+    border-left: 3px solid #999999;
+    border-top: 3px solid #ABABAB;
+    border-right: 3px solid #F2F2F2;
+    border-bottom: 3px solid #E6E6E6;
+}
+
+.clock-ctn .clock {
+    font-weight: 400;
+    font-size: 14px;
+}
