@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background: #000000;
+}
+
+.container {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.megaphone-btn {
+    position: relative;
+    border: none;
+    border-radius: 50%;
+    padding: 25px;
+    background: #0FFF2F;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.close {
+    display: none;
+}
+
+.megaphone-btn.active .megaphone {
+    display: none;
+}
+
+.megaphone-btn.active .close {
+    display: block;
+}
+
+.social-media {
+    position: absolute;
+    background: #3f3f3f;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+    --top: 50%;
+    --left: 50%;
+    --transform: translate(-50%, -50%);
+    top: var(--top);
+    left: var(--left);
+    tranform: var(--transform);
+    animation: collapse 0.3s forwards;
+}
+
+.social-media svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.github {
+    --final-x : -260%;
+    --final-y : 80%;
+}
+
+.youtube {
+    --final-x : -300%;
+    --final-y : -70%;
+}
+
+.instagram {
+    --final-x : -220%;
+    --final-y : -220%;
+}
+
+.bluesky {
+    --final-x : -70%;
+    --final-y : -290%;
+}
+
+.threads {
+    --final-x : 80%;
+    --final-y : -250%;
+}
+
+.megaphone-btn.active ~ .social-media {
+    animation: expand 0.3s forwards;
+}
+
+@keyframes expand {
+    0% {
+        top: var(--top);
+        left: var(--left);
+        transform: var(--transform);
+    }
+    100% {
+        transform: translate(var(--final-x), var(--final-y));
+    }
+}
+
+@keyframes collapse {
+    0% {
+        transform: translate(var(--final-x), var(--final-y));
+    }
+    100% {
+        top: var(--top);
+        left: var(--left);
+        transform: var(--transform);
+    }
+}
