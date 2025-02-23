@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('./images/PAPER-TEXTURE.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "DM Serif Display", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-box {
+    position: relative;
+    max-width: 800px;
+    font-size: 65px;
+    line-height: 65px;
+    text-align: center;
+    color: #4B4035;
+    font-style: italic;
+    padding: 20px 0;
+}
+
+.quote-box:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 100%;
+    width: 50px;
+    height: 50px;
+    background-image: url("./images/quotation-marks.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
